@@ -1,0 +1,87 @@
+body {
+    background-color: #013B2D;
+    margin: 0;
+    overflow: hidden; /* Impede que a barra de rolagem apareça */
+}
+
+.caixa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    max-width: 400px;
+    margin: 10% auto;
+    padding: 20px;
+    background-color: #013B2D;
+    border: 1px solid #fbff24; /* Adiciona uma borda branca de 1 pixel */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.palavras {
+    font-family: 'Great Vibes', cursive;
+    color: #fbff24;
+    font-size: xxx-large; /* Ajuste o tamanho conforme necessário */
+    order: -1;
+}
+
+
+.texto {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    font-size: small;
+    font-weight: lighter;
+    text-align: justify;
+    padding: 20px;
+}
+
+.fundo{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 40px;
+    width: 50px;
+}
+
+.lado2{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 40px;
+    width: 50px;
+}
+
+
+@keyframes swing {
+    15% {
+      transform: rotate(5deg);
+    }
+    30% {
+      transform: rotate(-5deg);
+    }
+    50% {
+      transform: rotate(3deg);
+    }
+    70% {
+      transform: rotate(-3deg);
+    }
+    85% {
+      transform: rotate(2deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  .tudo {
+    transform-origin: top center;
+    animation: swing 2s ease-in-out 2; /* Adiciona a animação swing com duração de 2 segundos, transição ease-in-out e reproduz duas vezes */
+  }
+  
+img{
+    width: 50px;
+    height: 50px;
+    order: -1; /* Coloca a imagem antes das palavras */
+}
